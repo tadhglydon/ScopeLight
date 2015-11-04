@@ -1,4 +1,76 @@
 body
 {
 	background-color:#81BEF7;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+}
+.star
+{
+	position: absolute;
+	top: 0;
+	left: 155;
+}
+.candle1
+{
+	position: absolute; 
+	top: 100;
+	left: 30;
+}
+.candle2
+{
+	position: absolute; 
+	top: 100; 
+	left: 350;
+}
+.candle3
+{
+	position: absolute; 
+	top: 300;
+	left: 50;
+}
+.candle4
+{
+	position: absolute; 
+	top: 300;
+	left: 350;
+}
+.candle5
+{
+	position: absolute; 
+	top: 160;
+	left: 150;
+}
+.candle6
+{
+	position: absolute; 
+	top: 160;
+	left: 240;
+}
+.candle7
+{
+	position: absolute; 
+	top: 290;
+	left: 195;
+}
+.titleBox
+{
+	width: 200px;
+	height: 50px;
+	border: 24px rgb(167, 0, 0) solid;
+	padding: 15px;
+	margin: 15px;
+	text-align:center;
+}
+.completeBox
+{
+	width: 200px;
+	height: 50px;
+	border: 24px rgb(0, 167, 0) solid;
+	padding: 15px;
+	margin: 5px;
+	text-align:center;
+}
+.hide
+{
+	display:none;
 }
