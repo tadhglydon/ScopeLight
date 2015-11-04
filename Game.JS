@@ -16,28 +16,21 @@ function ResetValues()
 	candleClicked3 = false;
 	candleClicked4 = false;
 	score = 0;
-	var obj=document.getElementById('litcandle1');
-	obj.className = 'hide';
-	obj=document.getElementById('litcandle2');
-	obj.className = 'hide';
-	obj=document.getElementById('litcandle3');
-	obj.className = 'hide';
-	obj=document.getElementById('litcandle4');
-	obj.className = 'hide';
+	$('#litcandle1').hide();
+	$('#litcandle2').hide();
+	$('#litcandle3').hide();
+	$('#litcandle4').hide();
 }
 
 function StartGame()
 {
-	alert('start');
 	ResetValues();
+	alert('start score:' + score);
 	timerId = setInterval(update,1000);
 	update();
-	obj=document.getElementById('Title');
-	obj.className = 'hide';
-	obj=document.getElementById('Tree');
-	obj.className = 'show';
-	obj=document.getElementById('Complete');
-	obj.className = 'hide';
+	$('#Title').hide();
+	$('#Complete').hide();
+	$('#Tree').show();
 }
 
 function update()
@@ -46,29 +39,26 @@ function update()
 }
 function ShowImgCandle1()
 {
-	var obj=document.getElementById('litcandle1');
-	obj.className = 'show';
+	$('#litcandle1').show();
 	candleClicked1 = true;
 	FinishGame();
 }
 function ShowImgCandle2()
 {
-	var obj=document.getElementById('litcandle2');
-	obj.className = 'show';
+	$('#litcandle2').show();
 	candleClicked2 = true;
 	FinishGame();
 }
 function ShowImgCandle3()
 {
-	var obj=document.getElementById('litcandle3');
-	obj.className = 'show';
+	alert('start score:' + score);
+	$('#litcandle3').show();
 	candleClicked3 = true;
 	FinishGame();
 }		
 function ShowImgCandle4()
 {
-	var obj=document.getElementById('litcandle4');
-	obj.className = 'show';
+	$('#litcandle4').show();
 	candleClicked4 = true;
 	FinishGame();
 }
@@ -77,10 +67,9 @@ function FinishGame()
 	//alert('candleClicked1:' + candleClicked1 + ' candleClicked2:' + candleClicked2 + ' candleClicked3: ' + candleClicked3 + ' candleClicked4:' + candleClicked4)
 	if(candleClicked1 && candleClicked2 && candleClicked3 && candleClicked4)
 	{
-		alert('Score: ' + score);
-		obj=document.getElementById('Tree');
-		obj.className = 'hide';
-		obj=document.getElementById('Complete');
-		obj.className = 'show';
+		document.getElementById('gameScore').innerHTML = 'Score: ' + score;
+		$('#Title').hide();
+		$('#Complete').show();
+		$('#Tree').hide();
 	}
 }
