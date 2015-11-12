@@ -108,11 +108,12 @@ function FinishGame()
 	//alert('candleClicked1:' + candleClicked1 + ' candleClicked2:' + candleClicked2 + ' candleClicked3: ' + candleClicked3 + ' candleClicked4:' + candleClicked4)
 	if(candleClicked1 && candleClicked2 && candleClicked3 && candleClicked4 && candleClicked5 && candleClicked6 && candleClicked7)
 	{
-		document.getElementById('gameScore').innerHTML = 'Time: ' + score;
+		document.getElementById('gameScore').innerHTML = 'Your score is ' + score;
 		GetRank(score);
 		$('#Title').hide();
 		$('#Complete').show();
 		$('#Tree').hide();
+		score = 0;
 	}
 }
 

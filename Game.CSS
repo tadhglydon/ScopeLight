@@ -2,7 +2,16 @@ body
 {
 	background-color:#81BEF7;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 16px;
+	color:#612D87;
+	font-size: 2em;
+	font-weight: bold;
+}
+.main
+{
+	margin: auto;
+	width: 500px ;
+	margin-left: auto ;
+	margin-right: auto ;
 }
 .star
 {
@@ -54,21 +63,22 @@ body
 }
 .titleBox
 {
-	width: 200px;
-	height: 50px;
-	border: 24px rgb(167, 0, 0) solid;
+	height: auto;
+	border: 24px #612D87 solid;
 	padding: 15px;
 	margin: 15px;
 	text-align:center;
+	background: white;
 }
 .completeBox
 {
-	width: 200px;
-	height: 50px;
+	font-size: 0.75em;
+	height: auto;
 	border: 24px rgb(0, 167, 0) solid;
 	padding: 15px;
-	margin: 5px;
+	margin: 15px;
 	text-align:center;
+	background: white;
 }
 .hide
 {

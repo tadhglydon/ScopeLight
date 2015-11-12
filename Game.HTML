@@ -7,67 +7,72 @@
 	<meta charset=utf-8 />
 </HEAD>
 <BODY>
-	<div ID="Title">
-		<div class="titleBox">
-			 Scope Xmas Light Game
+	<div class="main">
+		<div ID="Title">
+			<div class="titleBox">
+				 <br/>
+				 <img src="scope-logo.png" alt="Scope Logo" />
+				 <br/>
+			</div>
+			<div class="titleBox">
+				 Light all the candles
+			</div>
+			<div class="titleBox" onclick="StartGame()">
+				 Go!
+			</div>
 		</div>
-		<div class="titleBox">
-			 Light all the candles!
-		</div>
-		<div class="titleBox" onclick="StartGame()">
-			 Start
-		</div>
-	</div>
-	<div ID="Tree" class="hide">	
-		<div id="testScore">
-		</div>
-		<img src="tree.png" alt="Christmas Tree" style="position: relative; top: 0; left: 0;"/>
-		<div>
-			<img src="star.png" alt="Star" class="star">
-		</div>
-		<div> 
-			<img id="candle1" alt="Unlit Candle 1" src="Candle_unlit.png" class="candle1" onclick="ShowImgCandle1()" />
-			<img id="litcandle1" alt="Lit Candle 1" src="Candle_lit.png" class="candle1" />  
-	    </div>
-		<div> 
-			<img id="candle2" alt="Unlit Candle 2" src="Candle_unlit.png" class="candle2" onclick="ShowImgCandle2()" /> 
-			<img id="litcandle2" alt="Lit Candle 2" src="Candle_lit.png" class="candle2" />
-		</div>
-		<div> 
-			<img id="candle3" alt="Unlit Candle 3" src="Candle_unlit.png" class="candle3" onclick="ShowImgCandle3()"/> 
-			<img id="litcandle3" alt="Lit Candle 3" src="Candle_lit.png" class="candle3" />  
-		</div>
-		<div>
-			<img id="candle4" alt="Unlit Candle 4" src="Candle_unlit.png" class="candle4" onclick="ShowImgCandle4()"/> 
-			<img id="litcandle4" alt="Lit Candle 4" src="Candle_lit.png" class="candle4" />  
-		</div>
-		<div>
-			<img id="candle5" alt="Unlit Candle 5" src="Candle_unlit.png" class="candle5" onclick="ShowImgCandle5()"/> 
-			<img id="litcandle5" alt="Lit Candle 5" src="Candle_lit.png" class="candle5" />  
-		</div>
-		<div>
-			<img id="candle6" alt="Unlit Candle 6" src="Candle_unlit.png" class="candle6" onclick="ShowImgCandle6()"/> 
-			<img id="litcandle6" alt="Lit Candle 6" src="Candle_lit.png" class="candle6" />  
-		</div>
-		<div>
-			<img id="candle7" alt="Unlit Candle 7" src="Candle_unlit.png" class="candle7" onclick="ShowImgCandle7()"/> 
-			<img id="litcandle7" alt="Lit Candle 7" src="Candle_lit.png" class="candle7" />  
-		</div>
-	</div>	
-	<div ID="Complete" class="hide">
-		<div id="gameScore" class="completeBox">
-		</div>
-		<div id="rank" class="completeBox">
-			Rank: [rank]
-		</div>
-		<div class="completeBox">
-			Social Link buttons
-		</div>
-		<div class="completeBox">
-			<a href="https://www.scope.org.uk/donate">Donate</a>
-		</div>
-		<div class="completeBox" onclick="ResetValues()">
-			 Restart
+		<div ID="Tree" class="hide">	
+			<div id="testScore">
+			</div>
+			<img src="tree.png" alt="Christmas Tree" style="position: relative; top: 0; left: 0;"/>
+			<div>
+				<img src="star.png" alt="Star" class="star">
+			</div>
+			<div> 
+				<img id="candle1" alt="Unlit Candle 1" src="Candle_unlit.png" class="candle1" onclick="ShowImgCandle1()" />
+				<img id="litcandle1" alt="Lit Candle 1" src="Candle_lit.png" class="candle1" />  
+		    </div>
+			<div> 
+				<img id="candle2" alt="Unlit Candle 2" src="Candle_unlit.png" class="candle2" onclick="ShowImgCandle2()" /> 
+				<img id="litcandle2" alt="Lit Candle 2" src="Candle_lit.png" class="candle2" />
+			</div>
+			<div> 
+				<img id="candle3" alt="Unlit Candle 3" src="Candle_unlit.png" class="candle3" onclick="ShowImgCandle3()"/> 
+				<img id="litcandle3" alt="Lit Candle 3" src="Candle_lit.png" class="candle3" />  
+			</div>
+			<div>
+				<img id="candle4" alt="Unlit Candle 4" src="Candle_unlit.png" class="candle4" onclick="ShowImgCandle4()"/> 
+				<img id="litcandle4" alt="Lit Candle 4" src="Candle_lit.png" class="candle4" />  
+			</div>
+			<div>
+				<img id="candle5" alt="Unlit Candle 5" src="Candle_unlit.png" class="candle5" onclick="ShowImgCandle5()"/> 
+				<img id="litcandle5" alt="Lit Candle 5" src="Candle_lit.png" class="candle5" />  
+			</div>
+			<div>
+				<img id="candle6" alt="Unlit Candle 6" src="Candle_unlit.png" class="candle6" onclick="ShowImgCandle6()"/> 
+				<img id="litcandle6" alt="Lit Candle 6" src="Candle_lit.png" class="candle6" />  
+			</div>
+			<div>
+				<img id="candle7" alt="Unlit Candle 7" src="Candle_unlit.png" class="candle7" onclick="ShowImgCandle7()"/> 
+				<img id="litcandle7" alt="Lit Candle 7" src="Candle_lit.png" class="candle7" />  
+			</div>
+		</div>	
+		<div ID="Complete" class="hide">
+			<div id="gameScore" class="completeBox">
+			</div>
+			<div id="rank" class="completeBox">
+				Rank: [rank]
+			</div>
+			<div class="completeBox">
+				Share <br/>
+				Social Link buttons
+			</div>
+			<div class="completeBox">
+				<a href="https://www.scope.org.uk/donate">Donate</a>
+			</div>
+			<div class="completeBox" onclick="ResetValues()">
+				 Restart
+			</div>
 		</div>
 	</div>
 </BODY>
