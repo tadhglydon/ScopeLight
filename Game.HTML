@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-	<title>Scope Xmas Game</title>
+	<title>Light up Christmas</title>
 	<link rel="stylesheet" type="text/css" href="GAME.css" />
 	<script src="GAME.js"></script>
 	<script src="jquery-2.1.4.js"></script>
@@ -10,19 +10,17 @@
 	<div class="main">
 		<div ID="Title">
 			<div class="titleBox">
-				 <br/>
 				 <img src="scope-logo.png" alt="Scope Logo" />
-				 <br/>
 			</div>
 			<div class="titleBox">
-				 Light all the candles
+				 Light up Christmas
 			</div>
-			<div class="titleBox" onclick="StartGame()">
-				 Go!
+			<div class="titleBoxAlt" onclick="StartGame()">
+				 Start the game
 			</div>
 		</div>
 		<div ID="Tree" class="hide">	
-			<div id="testScore">
+			<div id="testScore" class="score">
 			</div>
 			<img src="tree.png" alt="Christmas Tree" style="position: relative; top: 0; left: 0;"/>
 			<div>
@@ -64,8 +62,33 @@
 				Rank: [rank]
 			</div>
 			<div class="completeBox">
-				Share <br/>
-				Social Link buttons
+				Share your score<br/>
+				<!-- Social Button HTML -->
+
+				<!-- Facebook -->
+					<a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
+					    <i class="fa fa-facebook"></i>
+					</a>
+
+				<!-- Twitter -->
+				<a href="http://twitter.com/share?url=fdhdrf&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
+				    <i class="fa fa-twitter"></i>
+				</a>
+
+				<!-- StumbleUpon (url, title) -->
+				<a href="http://www.stumbleupon.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn stumbleupon">
+				    <i class="fa fa-stumbleupon"></i>
+				</a>
+
+				<!-- LinkedIn -->
+				<a href="http://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" target="_blank" class="share-btn linkedin">
+				    <i class="fa fa-linkedin"></i>
+				</a>
+
+				<!-- Email -->
+				<a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
+				    <i class="fa fa-envelope"></i>
+				</a>
 			</div>
 			<div class="completeBox">
 				<a href="https://www.scope.org.uk/donate">Donate</a>

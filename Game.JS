@@ -125,16 +125,16 @@ function GetRank(score)
         rank = "a gingerbread house";
         break;
     case 2:
-        rank = "a babble";
+        rank = "a shiny babble";
         break;
     case 3:
-        rank = "a cande cane";
+        rank = "a candy cane";
         break;
     case 4:
-        rank = "a cupcake";
+        rank = "a warm cupcake";
         break;
     case 5:
-        rank = "some tinsel";
+        rank = "some sparkly tinsel";
         break;
     case 6:
         rank = "a Christmas stocking";
