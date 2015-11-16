@@ -1,14 +1,13 @@
 # ScopeLight
 
-Working area for game for the charity Scope
+Working area for game Light Up Christmas for the charity Scope
 
-// Todo list
+_Todo list_
 
-- Add a welcome screen
-- Add a score screen with
-  - Score
-  - Social Links
-  - Donate button
-  - Restart
-- Add a ranking system
-- Add concept of candles going out
+- Create new images
+- Implement images into a game format
+- Fix zeroing bug on reset
+- Add share button
+    - Facebook
+    - Twitter
+    - Email
