@@ -12,8 +12,11 @@
 			<div class="titleBox">
 				 <img src="scope-logo.png" alt="Scope Logo" />
 			</div>
-			<div class="titleBox">
-				 Light up Christmas
+			<div class="titleNameBox">
+				the<br />
+				<div class="titleName">Light up<br/>
+				Christmas<br /></div>
+				appeal<br />
 			</div>
 			<div class="titleBoxAlt" onclick="StartGame()">
 				 Start the game
@@ -56,42 +59,40 @@
 			</div>
 		</div>	
 		<div ID="Complete" class="hide">
-			<div id="gameScore" class="completeBox">
+			<div id="gameScore" class="titleBox">
 			</div>
-			<div id="rank" class="completeBox">
+			<div id="rank" class="titleBox">
 				Rank: [rank]
 			</div>
+			<!--
 			<div class="completeBox">
-				Share your score<br/>
-				<!-- Social Button HTML -->
+				Share your rank<br/><br/>
 
-				<!-- Facebook -->
-					<a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
-					    <i class="fa fa-facebook"></i>
-					</a>
+				<!-- Facebook 
+				<div class="fb-share-button" data-href="https://www.scope.org.uk/donate" data-layout="button"></div>
 
-				<!-- Twitter -->
-				<a href="http://twitter.com/share?url=fdhdrf&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
+				<!-- Twitter 
+				<a href="http://twitter.com/share?url=&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
 				    <i class="fa fa-twitter"></i>
 				</a>
 
-				<!-- StumbleUpon (url, title) -->
-				<a href="http://www.stumbleupon.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn stumbleupon">
-				    <i class="fa fa-stumbleupon"></i>
-				</a>
-
-				<!-- LinkedIn -->
-				<a href="http://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" target="_blank" class="share-btn linkedin">
-				    <i class="fa fa-linkedin"></i>
-				</a>
-
-				<!-- Email -->
+				<!-- Email 
 				<a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
 				    <i class="fa fa-envelope"></i>
 				</a>
+					<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							if (d.getElementById(id)) return;
+								js = d.createElement(s); js.id = id;
+								js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+								fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));
+						</script>
 			</div>
-			<div class="completeBox">
-				<a href="https://www.scope.org.uk/donate">Donate</a>
+			-->
+			<div class="completeBox" onclick="GoToDonatePage()">
+				Donate
 			</div>
 			<div class="completeBox" onclick="ResetValues()">
 				 Restart

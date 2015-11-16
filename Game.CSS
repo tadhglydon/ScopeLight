@@ -1,14 +1,26 @@
 body
 {
-	background-color:#81BEF7;
+	background-color:#213675;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-	color:#612D87;
+	color:white;
 	font-size: 2em;
 	font-weight: bold;
 }
 #tree
 {
 	position: relative;
+}
+.titleNameBox
+{
+	font:Helvetica;
+	padding: 45px;
+	margin: 15px;
+	color:yellow;
+}
+.titleName
+{
+	color: white;
+	font-size: 2.25em;
 }
 .score
 {
@@ -79,6 +91,7 @@ body
 	text-align:center;
 	background: white;	
     border-radius: 25px;
+	color: #612D87;
 }
 .titleBoxAlt
 {
@@ -99,7 +112,7 @@ body
 	padding: 15px;
 	margin: 15px;
 	text-align:center;
-	background: white;
+	background: #612D87;
     border-radius: 25px;
 }
 .hide

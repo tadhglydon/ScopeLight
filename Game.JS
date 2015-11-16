@@ -34,6 +34,10 @@ function ResetValues()
 	$('#Tree').show();
 }
 
+function GoToDonatePage () {
+	window.location.href = 'https://www.scope.org.uk/donate';
+}
+
 function StartGame()
 {
 	score = 0;
