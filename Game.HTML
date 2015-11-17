@@ -5,58 +5,33 @@
 	<script src="GAME.js"></script>
 	<script src="jquery-2.1.4.js"></script>
 	<meta charset=utf-8 />
+	<META name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 </HEAD>
 <BODY>
 	<div class="main">
 		<div ID="Title">
 			<div class="titleBox">
-				 <img src="scope-logo.png" alt="Scope Logo" />
+				 <img src="images/scope-logo.png" alt="Scope Logo" />
 			</div>
-			<div class="titleNameBox">
-				the<br />
-				<div class="titleName">Light up<br/>
-				Christmas<br /></div>
-				appeal<br />
+			<div class="titleLogoBox">
+				 <img src="images/MainLogo.png" alt="the Light up Christmas appeal" />
 			</div>
-			<div class="titleBoxAlt" onclick="StartGame()">
+			<div class="titleBox" onclick="StartGame()">
+				 Tap on the stars
+			</div>
+			<div class="button" onclick="StartGame()">
 				 Start the game
 			</div>
 		</div>
-		<div ID="Tree" class="hide">	
+		<div ID="Tree"> 
+			<!--class="hide"-->	
 			<div id="testScore" class="score">
 			</div>
-			<img src="tree.png" alt="Christmas Tree" style="position: relative; top: 0; left: 0;"/>
-			<div>
-				<img src="star.png" alt="Star" class="star">
-			</div>
-			<div> 
-				<img id="candle1" alt="Unlit Candle 1" src="Candle_unlit.png" class="candle1" onclick="ShowImgCandle1()" />
-				<img id="litcandle1" alt="Lit Candle 1" src="Candle_lit.png" class="candle1" />  
-		    </div>
-			<div> 
-				<img id="candle2" alt="Unlit Candle 2" src="Candle_unlit.png" class="candle2" onclick="ShowImgCandle2()" /> 
-				<img id="litcandle2" alt="Lit Candle 2" src="Candle_lit.png" class="candle2" />
-			</div>
-			<div> 
-				<img id="candle3" alt="Unlit Candle 3" src="Candle_unlit.png" class="candle3" onclick="ShowImgCandle3()"/> 
-				<img id="litcandle3" alt="Lit Candle 3" src="Candle_lit.png" class="candle3" />  
-			</div>
-			<div>
-				<img id="candle4" alt="Unlit Candle 4" src="Candle_unlit.png" class="candle4" onclick="ShowImgCandle4()"/> 
-				<img id="litcandle4" alt="Lit Candle 4" src="Candle_lit.png" class="candle4" />  
-			</div>
-			<div>
-				<img id="candle5" alt="Unlit Candle 5" src="Candle_unlit.png" class="candle5" onclick="ShowImgCandle5()"/> 
-				<img id="litcandle5" alt="Lit Candle 5" src="Candle_lit.png" class="candle5" />  
-			</div>
-			<div>
-				<img id="candle6" alt="Unlit Candle 6" src="Candle_unlit.png" class="candle6" onclick="ShowImgCandle6()"/> 
-				<img id="litcandle6" alt="Lit Candle 6" src="Candle_lit.png" class="candle6" />  
-			</div>
-			<div>
-				<img id="candle7" alt="Unlit Candle 7" src="Candle_unlit.png" class="candle7" onclick="ShowImgCandle7()"/> 
-				<img id="litcandle7" alt="Lit Candle 7" src="Candle_lit.png" class="candle7" />  
-			</div>
+			<img src="images/tree_dots.png" alt="Christmas Tree" style="position: relative; top: 0; left: 0;"/>
+			<img id="Star1" src="images/star1.png" alt="Star 1" onclick="ClickedStar(1)" />
+			<img id="Star2" src="images/star2.png" alt="Star 2" onclick="ClickedStar(2)" class="hide" />
+			<img id="Star3" src="images/star3.png" alt="Star 3" onclick="ClickedStar(3)" class="hide" />
+			<img id="TopStar" src="images/topStar.png" alt="The final Star" class="hide" />
 		</div>	
 		<div ID="Complete" class="hide">
 			<div id="gameScore" class="titleBox">
@@ -91,10 +66,10 @@
 						</script>
 			</div>
 			-->
-			<div class="completeBox" onclick="GoToDonatePage()">
+			<div class="button" onclick="GoToDonatePage()">
 				Donate
 			</div>
-			<div class="completeBox" onclick="ResetValues()">
+			<div class="button" onclick="ResetValues()">
 				 Restart
 			</div>
 		</div>

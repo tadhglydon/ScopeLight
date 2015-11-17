@@ -12,6 +12,57 @@ var candleClicked7 = false;
 var timerId; // current timer if started
 var score;
 
+var visibleStars = [true,false,false];
+var currentStar = "Star1";
+
+function ClickedStar(starNumber)
+{
+    alert(starNumber);
+    if("Star" + starNumber == currentStar)
+    {
+        if(AllStarsSelected())
+        {
+            alert("All stars selected");
+            $("$TopStar").show();
+        }
+        else
+        {
+            visibleStars[starNumber - 1] = true;
+            var newStarNumber = GetRandomHiddenStar();
+            var newStarName = "Star" + newStarNumber;
+            alert(newStarName);
+            $("#" + newStarName).show();
+            currentStar = newStarName;
+            alert(visibleStars[0] + ' ' + visibleStars[1]+ ' ' + visibleStars[2]);
+        }
+    }
+}
+
+function AllStarsSelected()
+{
+    for (i = 0; i < visibleStars.length; i++) { 
+        if(visibleStars[i] == false)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+function GetRandomHiddenStar()
+{
+    var newStar = Math.floor((Math.random() * 3) + 1);
+    if(visibleStars[newStar - 1] == false)
+    {
+        return newStar;
+    }    
+    else
+    {
+        return GetRandomHiddenStar();
+    }
+
+}
+
 function ResetValues()
 {
 	candleClicked1 = false;
