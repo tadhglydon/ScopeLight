@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/GAME.css" />
+        <title>Light up Christmas</title>
+    </head>
+    <body>
+        <div class="Main">
+            <div ID="Title">
+                    <div class="TitleBox">
+                         <img src="images/scope-logo.png" alt="Scope Logo" />
+                    </div>
+                    <div class="TitleLogoBox">
+                         <img src="images/MainLogo.png" alt="the Light up Christmas appeal" />
+                    </div>
+                    <div class="TitleBox" onclick="StartGame()">
+                         Tap on the stars
+                    </div>
+                    <div class="Button" onclick="StartGame()">
+                         Start the game
+                    </div>
+                </div>
+                <div ID="Tree" class="Hide">    
+                    <div id="TestScore" class="Score">
+                    </div>
+                    <img src="images/tree_dots.png" alt="Christmas Tree" style="position: relative; top: 0; left: 0;"/>
+                    <img id="Star1" src="images/star1.png" alt="Star 1" onclick="ClickedStar(1)" />
+                    <img id="Star2" src="images/star2.png" alt="Star 2" onclick="ClickedStar(2)" class="Hide" />
+                    <img id="Star3" src="images/star3.png" alt="Star 3" onclick="ClickedStar(3)" class="Hide" />
+                    <img id="TopStar" src="images/topStar.png" alt="The final Star" class="Hide" />
+                </div>  
+                <div ID="Complete" class="Hide">
+                    <div id="GameScore" class="TitleBox">
+                    </div>
+                    <div id="Rank" class="TitleBox">
+                        Rank: [rank]
+                    </div>
+                    <div class="Button" onclick="GoToDonatePage()">
+                        Donate
+                    </div>
+                    <div class="Button" onclick="ResetValues()">
+                         Restart
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+            app.initialize();
+    </script>
+    <script type="text/javascript" src="js/GAME.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    </body>
+</html>
