@@ -3,21 +3,29 @@ body
 	background-color:#213675;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	color:white;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
+.Main
+{
+	margin: auto;
+	width: 300px ;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align: center;
+}
 #Tree
 {
-	max-width:100%;
-	max-height:100%;
 	position: relative;
+	background: url(./images/tree_dots.png) no-repeat 0 100%;
+	padding-bottom: 
 }
 
 .TitleLogoBox
 {
 	font:Helvetica;
-	padding: 45px;
+	padding: 15px;
 	margin: 15px;
 }
 .TitleName
@@ -29,27 +37,12 @@ body
 {
 	text-align: left;
 }
-.Main
-{
-	margin: auto;
-	width: 700px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align: center;
-}
-.Star
-{
-	position: absolute;
-	top: 0;
-	left: 147;	
-	display:none;
-}
 .TitleBox
 {
 	height: auto;
 	border: 24px white solid;
-	padding: 15px;
-	margin: 45px;
+	padding: 5px;
+	margin: 5px;
 	text-align:center;
 	background: white;	
     border-radius: 25px;
@@ -59,26 +52,25 @@ body
 {
 	height: auto;
 	border: 24px #612D87 solid;
-	padding: 15px;
-	margin: 45px;
+	padding: 5px;
+	margin: 5px;
 	text-align:center;
 	background: #612D87;	
     border-radius: 25px;
-    color:white;
+    color: white;
 }
 .CompleteBox
 {
-	width: 600px;
 	font-size: 0.75em;
 	height: auto;
 	border: 24px #612D87 solid;
-	padding: 15px;
-	margin: 45px;
+	padding: 5px;
+	margin: 5px;
 	text-align:center;
 	background: #612D87;
     border-radius: 25px;
 }
 .Hide
 {
-	display:none;
+	display: none;
 }
