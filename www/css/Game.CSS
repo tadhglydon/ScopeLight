@@ -18,8 +18,8 @@ body
 #Tree
 {
 	position: relative;
-	background: url(./images/tree_dots.png) no-repeat 0 100%;
-	padding-bottom: 
+	background: url(../images/tree_dots.png) no-repeat 0 100%;
+	padding-bottom:450px;
 }
 
 .TitleLogoBox
@@ -40,9 +40,9 @@ body
 .TitleBox
 {
 	height: auto;
-	border: 24px white solid;
+	border: 5px white solid;
 	padding: 5px;
-	margin: 5px;
+	margin: 10px;
 	text-align:center;
 	background: white;	
     border-radius: 25px;
@@ -51,7 +51,7 @@ body
 .Button
 {
 	height: auto;
-	border: 24px #612D87 solid;
+	border: 10px #612D87 solid;
 	padding: 5px;
 	margin: 5px;
 	text-align:center;
