@@ -1,13 +1,3 @@
-/*
- * Very rough at the moment. Lots of copy+paste code which is bad.
- */
-var candleClicked1 = false;
-var candleClicked2 = false;
-var candleClicked3 = false;
-var candleClicked4 = false;
-var candleClicked5 = false;
-var candleClicked6 = false;
-var candleClicked7 = false;
 
 var timerId; // current timer if started
 var score;
@@ -20,14 +10,20 @@ function ClickedStar(starNumber)
     alert(starNumber);
     if("Star" + starNumber == currentStar)
     {
+        visibleStars[starNumber - 1] = true;
         if(AllStarsSelected())
         {
             alert("All stars selected");
-            $("$TopStar").show();
+            $('#TopStar').show();
+            $('#GameScore').html('Your score is ' + score);
+            GetRank(score);
+            $('#Title').hide();
+            $('#Complete').show();
+            $('#Tree').hide();
+            score = 0;
         }
         else
         {
-            visibleStars[starNumber - 1] = true;
             var newStarNumber = GetRandomHiddenStar();
             var newStarName = "Star" + newStarNumber;
             alert(newStarName);
@@ -65,21 +61,6 @@ function GetRandomHiddenStar()
 
 function ResetValues()
 {
-	candleClicked1 = false;
-	candleClicked2 = false;
-	candleClicked3 = false;
-	candleClicked4 = false;
-	candleClicked5 = false;
-	candleClicked6 = false;
-	candleClicked7 = false;
-	score = 0;
-	$('#litcandle1').hide();
-	$('#litcandle2').hide();
-	$('#litcandle3').hide();
-	$('#litcandle4').hide();
-	$('#litcandle5').hide();
-	$('#litcandle6').hide();
-	$('#litcandle7').hide();
 	$('#Title').hide();
 	$('#Complete').hide();
 	$('#Tree').show();
@@ -100,62 +81,7 @@ function StartGame()
 function update()
 {
 	score = score + 1;
-	document.getElementById('testScore').innerHTML = 'Score: ' + score;
-}
-
-function ShowImgCandle1()
-{
-	$('#litcandle1').show();
-	candleClicked1 = true;
-	FinishGame();
-}
-
-function ShowImgCandle2()
-{
-	$('#litcandle2').show();
-	candleClicked2 = true;
-	FinishGame();
-}
-
-function ShowImgCandle3()
-{
-	$('#litcandle3').show();
-	candleClicked3 = true;
-	FinishGame();
-}		
-
-function ShowImgCandle4()
-{
-	$('#litcandle4').show();
-	candleClicked4 = true;
-
-	$('#litcandle2').hide();
-	candleClicked2 = false;
-	FinishGame();
-}
-
-function ShowImgCandle5()
-{
-	$('#litcandle5').show();
-	candleClicked5 = true;
-	FinishGame();
-}
-
-function ShowImgCandle6()
-{
-	$('#litcandle6').show();
-	candleClicked6 = true;
-
-	$('#litcandle3').hide();
-	candleClicked3 = false;
-	FinishGame();
-}
-
-function ShowImgCandle7()
-{
-	$('#litcandle7').show();
-	candleClicked7 = true;
-	FinishGame();
+	$('#TestScore').html('Score: ' + score);
 }
 
 function FinishGame()
@@ -163,7 +89,7 @@ function FinishGame()
 	//alert('candleClicked1:' + candleClicked1 + ' candleClicked2:' + candleClicked2 + ' candleClicked3: ' + candleClicked3 + ' candleClicked4:' + candleClicked4)
 	if(candleClicked1 && candleClicked2 && candleClicked3 && candleClicked4 && candleClicked5 && candleClicked6 && candleClicked7)
 	{
-		document.getElementById('gameScore').innerHTML = 'Your score is ' + score;
+		$('#GameScore').html('Your score is ' + score);
 		GetRank(score);
 		$('#Title').hide();
 		$('#Complete').show();
@@ -242,6 +168,6 @@ function GetRank(score)
     default:
         rank="Santa";
 	}
-	document.getElementById('rank').innerHTML = 'You achieved the rank of ' + rank + '!';
+	$('#Rank').html('You achieved the rank of ' + rank + '!');
 }
 

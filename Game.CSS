@@ -6,26 +6,30 @@ body
 	font-size: 2em;
 	font-weight: bold;
 }
-#tree
+
+#Tree
 {
+	max-width:100%;
+	max-height:100%;
 	position: relative;
 }
-.titleLogoBox
+
+.TitleLogoBox
 {
 	font:Helvetica;
 	padding: 45px;
 	margin: 15px;
 }
-.titleName
+.TitleName
 {
 	color: white;
 	font-size: 2.25em;
 }
-.score
+.Score
 {
 	text-align: left;
 }
-.main
+.Main
 {
 	margin: auto;
 	width: 700px ;
@@ -33,56 +37,14 @@ body
 	margin-right: auto ;
 	text-align: center;
 }
-.star
+.Star
 {
 	position: absolute;
 	top: 0;
 	left: 147;	
 	display:none;
 }
-.candle1
-{
-	position: absolute; 
-	top: 130;
-	left: 30;
-}
-.candle2
-{
-	position: absolute; 
-	top: 130; 
-	left: 350;
-}
-.candle3
-{
-	position: absolute; 
-	top: 330;
-	left: 50;
-}
-.candle4
-{
-	position: absolute; 
-	top: 330;
-	left: 350;
-}
-.candle5
-{
-	position: absolute; 
-	top: 190;
-	left: 150;
-}
-.candle6
-{
-	position: absolute; 
-	top: 190;
-	left: 240;
-}
-.candle7
-{
-	position: absolute; 
-	top: 320;
-	left: 195;
-}
-.titleBox
+.TitleBox
 {
 	height: auto;
 	border: 24px white solid;
@@ -93,7 +55,7 @@ body
     border-radius: 25px;
 	color: #612D87;
 }
-.button
+.Button
 {
 	height: auto;
 	border: 24px #612D87 solid;
@@ -104,7 +66,7 @@ body
     border-radius: 25px;
     color:white;
 }
-.completeBox
+.CompleteBox
 {
 	width: 600px;
 	font-size: 0.75em;
@@ -116,7 +78,7 @@ body
 	background: #612D87;
     border-radius: 25px;
 }
-.hide
+.Hide
 {
 	display:none;
 }
