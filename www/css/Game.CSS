@@ -15,13 +15,42 @@ body
 	margin-right: auto ;
 	text-align: center;
 }
+#Score
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
 #Tree
 {
 	position: relative;
 	background: url(../images/tree_dots.png) no-repeat 0 100%;
 	padding-bottom:450px;
 }
-
+#Star1
+{
+	position:absolute;
+	top: 389px;
+	left: 162px;
+}
+#Star2
+{
+	position:absolute;
+	top: 380px;
+	left: 206px;
+}
+#Star3
+{
+	position: absolute;
+	top: 372px;
+	left: 226px;
+}
+#TopStar
+{
+	position: absolute;
+	top: 0px;
+	left: 110px;
+}
 .TitleLogoBox
 {
 	font:Helvetica;

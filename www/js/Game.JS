@@ -81,7 +81,7 @@ function StartGame()
 function update()
 {
 	score = score + 1;
-	$('#TestScore').html('Score: ' + score);
+	$('#Score').html('Score: ' + score);
 }
 
 function FinishGame()
